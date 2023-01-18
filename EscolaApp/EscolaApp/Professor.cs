@@ -13,9 +13,11 @@ namespace EscolaApp
         public string Matricula { get; set; }
         public string Area { get; set; }
 
+        public int Curso { get; set; }
+
         public override string ToString()
         {
-            return $"Nome: {Nome} \n Matricula: \n {Matricula} Area de atuação: {Area} \n Id: {Id}";
+            return $"Nome: {Nome}\n Matricula: {Matricula} \nArea de atuação: {Area} \nId: {Id} \n Professor da Turma{Curso}";
         }
 
     }

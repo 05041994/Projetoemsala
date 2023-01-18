@@ -39,6 +39,7 @@ namespace EscolaApp
                     obj.Matricula = p.Matricula;
                     obj.Area = p.Area;
                     obj.Id = p.Id;
+                    obj.Curso = p.Curso;
                 }
             Salvar();
         }
@@ -82,11 +83,11 @@ namespace EscolaApp
             
             f.Close();
         }
-        //public static void Matricular(Aluno a, Turma t)
-        //{
-        //    a.IdTurma = t.Id;
-        //    Atualizar(a);
-        //}
+        public static void Matricular(Professor a, Turma t)
+        {
+            a.Curso = t.Id;
+            Atualizar(a);
+        }
         //public static List<Aluno> Listar(Turma t)
         //{
         //    Abrir();

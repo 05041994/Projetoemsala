@@ -16,6 +16,8 @@
             <MenuItem Header="Operações">
                 <MenuItem Header="Matricular Aluno..." Click="Matricula_Click" />
                 <MenuItem Header="Diário da Turma..." Click="Diario_Click" />
+                <MenuItem Header="Matricular Professor..." Click="MatriculaProfessor_Click" />
+
             </MenuItem>
         </Menu>
         <Button Visibility="Hidden" Click="Turma_Click" Content="Cadastrar Turma" HorizontalAlignment="Left" Margin="23,19,0,0" VerticalAlignment="Top"/>
@@ -23,5 +25,6 @@
         <Button Visibility="Hidden" Click="Professor_Click" Content="Cadastrar Professor" HorizontalAlignment="Left" Margin="23,64,0,0" VerticalAlignment="Top"/>
         <Button Visibility="Hidden" Click="Matricula_Click" Content="Matricular Aluno" HorizontalAlignment="Left" Margin="23,69,0,0" VerticalAlignment="Top"/>
         <Button Visibility="Hidden" Click="Diario_Click" Content="Diário da Turma" HorizontalAlignment="Left" Margin="23,94,0,0" VerticalAlignment="Top"/>
+        <Button Visibility="Hidden" Click="MatriculaProfessor_Click" Content="Diário da Turma" HorizontalAlignment="Left" Margin="23,94,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>

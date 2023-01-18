@@ -23,5 +23,61 @@ namespace EscolaApp
         {
             InitializeComponent();
         }
+
+        private void InserirClick(object sender, RoutedEventArgs e)
+        {
+            Professor p = new Professor();
+            p.Id = int.Parse(txtId.Text);
+            p.Nome = txtNome.Text;
+            p.Matricula = txtMatricula.Text;
+            p.Area = txtArea.Text;
+
+            NProfessor.Inserir(p);
+
+            ListarClick(sender, e);
+        }
+
+        private void ListarClick(object sender, RoutedEventArgs e)
+        {
+            listProfessores.ItemsSource = null;
+            listProfessores.ItemsSource = NProfessor.Listar();
+        }
+
+        private void AtualizarClick(object sender, RoutedEventArgs e)
+        {
+            Professor p = new Professor();
+            p.Id = int.Parse(txtId.Text);
+            p.Nome = txtNome.Text;
+            p.Matricula = txtMatricula.Text;
+            p.Area = txtArea.Text;
+
+            NProfessor.Atualizar(p);
+
+            ListarClick(sender, e);
+
+        }
+
+        private void ExcluirClick(object sender, RoutedEventArgs e)
+        {
+            Professor p = new Professor();
+            p.Id = int.Parse(txtId.Text);
+
+            NProfessor.Excluir(p);
+
+            ListarClick(sender, e);
+        }
+
+        private void listProfessores_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if(listProfessores.SelectedItem != null)
+            {
+                Professor obj = (Professor)listProfessores.SelectedItem;
+
+                txtId.Text = obj.Id.ToString();
+                txtNome.Text = obj.Nome;
+                txtMatricula.Text = obj.Matricula;
+                txtArea.Text = obj.Area;
+            }
+        }
     }
 }

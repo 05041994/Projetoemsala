@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\20211011110009\\Downloads\\EscolaApp\\EscolaApp\\EscolaApp.csproj",
+      "projectUniqueName": "C:\\Users\\20211011110009\\Source\\Repos\\05041994\\Projetoemsala\\EscolaApp\\EscolaApp\\EscolaApp.csproj",
       "projectName": "EscolaApp",
-      "projectPath": "C:\\Users\\20211011110009\\Downloads\\EscolaApp\\EscolaApp\\EscolaApp.csproj",
+      "projectPath": "C:\\Users\\20211011110009\\Source\\Repos\\05041994\\Projetoemsala\\EscolaApp\\EscolaApp\\EscolaApp.csproj",
       "packagesPath": "C:\\Users\\20211011110009\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\20211011110009\\Downloads\\EscolaApp\\EscolaApp\\obj\\",
+      "outputPath": "C:\\Users\\20211011110009\\Source\\Repos\\05041994\\Projetoemsala\\EscolaApp\\EscolaApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\20211011110009\\AppData\\Roaming\\NuGet\\NuGet.Config",

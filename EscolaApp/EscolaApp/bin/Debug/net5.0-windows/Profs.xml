@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfProfessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Professor>
+    <Id>1</Id>
+    <Nome>Jair</Nome>
+    <Matricula>1</Matricula>
+    <Area>Informatica p</Area>
+    <Curso>2</Curso>
+  </Professor>
+  <Professor>
+    <Id>2</Id>
+    <Nome>IRISVALDO</Nome>
+    <Matricula>123</Matricula>
+    <Area>Legal</Area>
+    <Curso>0</Curso>
+  </Professor>
+</ArrayOfProfessor>
