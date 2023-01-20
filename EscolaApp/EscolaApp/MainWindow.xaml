@@ -1,4 +1,4 @@
-﻿<Window x:Class="EscolaApp.MainWindow"
+<Window x:Class="EscolaApp.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -17,6 +17,7 @@
                 <MenuItem Header="Matricular Aluno..." Click="Matricula_Click" />
                 <MenuItem Header="Diário da Turma..." Click="Diario_Click" />
                 <MenuItem Header="Matricular Professor..." Click="MatriculaProfessor_Click" />
+                <MenuItem Header="Díario Professor..." Click="List_Turma_Prof_Click"/>
 
             </MenuItem>
         </Menu>
@@ -26,5 +27,6 @@
         <Button Visibility="Hidden" Click="Matricula_Click" Content="Matricular Aluno" HorizontalAlignment="Left" Margin="23,69,0,0" VerticalAlignment="Top"/>
         <Button Visibility="Hidden" Click="Diario_Click" Content="Diário da Turma" HorizontalAlignment="Left" Margin="23,94,0,0" VerticalAlignment="Top"/>
         <Button Visibility="Hidden" Click="MatriculaProfessor_Click" Content="Diário da Turma" HorizontalAlignment="Left" Margin="23,94,0,0" VerticalAlignment="Top"/>
+        <Button Visibility="Hidden" Click="List_Turma_Prof_Click" Content="Diário Do Professor" HorizontalAlignment="Left" Margin="23,94,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>
