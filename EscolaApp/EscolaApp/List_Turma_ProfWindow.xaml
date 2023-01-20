@@ -1,12 +1,14 @@
-﻿<Window x:Class="EscolaApp.List_Turma_ProfWindow"
+<Window x:Class="EscolaApp.List_Turma_ProfWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EscolaApp"
         mc:Ignorable="d"
-        Title="List_Turma_ProfWindow" Height="450" Width="800">
+        Title="List_Turma_ProfWindow" Height="300" Width="400">
     <Grid>
-        
+        <ListBox Name="listTurmas" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,10,0,0" Width="380" Height="105"/>
+        <ListBox Name="listProfessor" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,142,0,0" Width="380" Height="99"/>
+        <Button Click="ListarClick" Content="Listar" HorizontalAlignment="Left" Margin="10,254,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>
