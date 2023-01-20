@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +22,18 @@ namespace EscolaApp
         public List_Turma_ProfWindow()
         {
             InitializeComponent();
+            listTurmas.ItemsSource = NTurma.Listar();
+        }
+        private void ListarClick(object sender, RoutedEventArgs e)
+        {
+            if (listTurmas.SelectedItem != null)
+            {
+                Turma t = (Turma)listTurmas.SelectedItem;
+                listProfessor.ItemsSource = null;
+                listProfessor.ItemsSource = NProfessor.Listar(t);
+            }
+            else
+                MessageBox.Show("É preciso selecionar uma turma");
         }
     }
 }
