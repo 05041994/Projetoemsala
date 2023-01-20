@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -88,15 +88,15 @@ namespace EscolaApp
             a.Curso = t.Id;
             Atualizar(a);
         }
-        //public static List<Aluno> Listar(Turma t)
-        //{
-        //    Abrir();
+        public static List<Professor> Listar(Turma t)
+        {
+            Abrir();
             
-        //    List<Aluno> diario = new List<Aluno>();
-        //    foreach (Aluno obj in alunos)
-        //        if (obj.IdTurma == t.Id) diario.Add(obj);
-        //    return diario;
-        //}
+            List<Professor> diario = new List<Professor>();
+            foreach (Professor obj in Profs)
+                if (obj.Id == t.Id) diario.Add(obj);
+            return diario;
+        }
 
     }
 }
