@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -53,6 +53,11 @@ namespace EscolaApp
         private void MatriculaProfessor_Click(object sender, RoutedEventArgs e)
         {
             Cad_Prof_TurmaWindow w = new Cad_Prof_TurmaWindow();
+            w.ShowDialog();
+        }
+        private void List_Turma_Prof_Click(object sender, RoutedEventArgs s)
+        {
+            List_Turma_ProfWindow w = new List_Turma_ProfWindow();
             w.ShowDialog();
         }
     }
